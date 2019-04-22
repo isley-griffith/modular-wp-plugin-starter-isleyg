@@ -15,7 +15,7 @@
 *
 */
 
-// npm i --D gulp del gulp-concat gulp-sass gulp-csso gulp-autoprefixer gulp-sourcemaps gulp-uglify gulp-babel @babel/core@^7.0.0
+// npm i --D gulp del gulp-concat gulp-sass gulp-csso gulp-autoprefixer gulp-sourcemaps gulp-uglify gulp-babel @babel/core@^7.0.0 @babel/plugin-proposal-object-rest-spread @babel/preset-env
 const { src, dest, series, parallel, watch } = require('gulp');
 const del           = require('del');//
 const concat        = require('gulp-concat');//
