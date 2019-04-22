@@ -32,7 +32,11 @@ sass.compiler = require( 'node-sass' );
 
 const liveFiles = [
   './**/*',
-  '!../plugin-name' // Keep the folder itself.
+  '!./.git',
+  '!./.gitattributes',
+  '!./.gitignore',
+  '!./README.md',
+  '!./gulpfile.js',
 
   // EXAMPLE FOR IN-PLUGIN REACT APP EXCLUSION:
   // '!./public/plugin-react-app/node_modules/**/*',
@@ -43,15 +47,18 @@ const liveFiles = [
 ];
 
 // Target the folder to delete/replace:
-const localCopyPath =   'C:/Users/benho/Repos/plugin-name_PROJECT/plugin-name';
-const localDelPath = [
-  'C:/Users/benho/Repos/plugin-name_PROJECT/plugin-name/**/*',
+const localDelPath =   'C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name';
+const localCopyPath = 'C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name';
 
-  '!C:/Users/benho/Repos/plugin-name_PROJECT/plugin-name/.git',
-  '!C:/Users/benho/Repos/plugin-name_PROJECT/plugin-name/.gitattributes',
-  '!C:/Users/benho/Repos/plugin-name_PROJECT/plugin-name/.gitignore',
-  '!C:/Users/benho/Repos/plugin-name_PROJECT/plugin-name/README.md',
-]
+//
+// const localCopyPath = [
+//   'C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name/**/*',
+//
+//   '!C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name/.git',
+//   '!C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name/.gitattributes',
+//   '!C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name/.gitignore',
+//   '!C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name/README.md',
+// ]
 
 
 // const zipFiles = 'C:/Users/benho/WordPress/dev/wp-content/plugins/**/*'
@@ -149,7 +156,7 @@ exports.clean = clean
 // exports.css = css
 // exports.js = js
 exports.copy = copy
-exports.zip = zipPlugin
+// exports.zip = zipPlugin
 
 
 exports.default = series(
