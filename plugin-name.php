@@ -8,14 +8,14 @@
 * registers the activation and deactivation functions, and defines a function
 * that starts the plugin.
 *
-* @link              http://github.com/benhoverter/modular-wordpress-plugin-boilerplate
+* @link              http://github.com/benhoverter/modular-wp-plugin-starter
 * @since             1.0.26
 * @package           plugin-name
 *
 * @wordpress-plugin
 * Plugin Name:       Plugin Name
-* Plugin URI:        https://github.com/benhoverter/modular-wordpress-plugin-boilerplate_PLUGIN
-* GitHub Plugin URI: https://github.com/benhoverter/modular-wordpress-plugin-boilerplate_PLUGIN
+* Plugin URI:        https://github.com/benhoverter/modular-wp-plugin-starter
+* GitHub Plugin URI: https://github.com/benhoverter/modular-wp-plugin-starter
 * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
 * Version:           1.0.26
 * Author:            Your Name
@@ -24,6 +24,7 @@
 * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
 * Text Domain:       plugin-name
 * Domain Path:       /languages
+
 */
 
 // If this file is called directly, abort.

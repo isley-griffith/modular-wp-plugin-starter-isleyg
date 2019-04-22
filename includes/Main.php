@@ -6,7 +6,7 @@
 * A class definition that includes attributes and functions used across both the
 * public-facing side of the site and the admin area.
 *
-* @link       https://github.com/benhoverter/modular-wordpress-plugin-boilerplate
+* @link       https://github.com/benhoverter/modular-wp-plugin-starter
 * @since      1.0.0
 *
 * @package    plugin-name

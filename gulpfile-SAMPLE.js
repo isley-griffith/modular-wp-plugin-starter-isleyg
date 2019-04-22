@@ -15,7 +15,7 @@
 *
 */
 
-// npm i --D gulp del gulp-concat gulp-sass gulp-csso gulp-autoprefixer gulp-sourcemaps gulp-uglify gulp-babel @babel/core@^7.0.0
+// npm i --D gulp del gulp-concat gulp-sass gulp-csso gulp-autoprefixer gulp-sourcemaps gulp-uglify gulp-babel @babel/core@^7.0.0 gulp-zip
 const { src, dest, series, parallel, watch } = require('gulp');
 const del           = require('del');//
 const concat        = require('gulp-concat');//
@@ -25,7 +25,6 @@ const autoprefixer  = require('gulp-autoprefixer');//
 const sourcemaps    = require('gulp-sourcemaps');//
 const uglify        = require('gulp-uglify');//
 const babel         = require('gulp-babel');//
-const zip           = require('gulp-zip'); //
 
 sass.compiler = require( 'node-sass' );
 
@@ -37,7 +36,7 @@ const liveFiles = [
   '!./.gitignore',
   '!./README.md',
   '!./gulpfile.js',
-  '!./gulpfile-SAMPLE.js',
+  '!./gulpfile-SAMPLE.js', // Remove this once you've rolled your own.
 
   // EXAMPLE FOR IN-PLUGIN REACT APP EXCLUSION:
   // '!./public/plugin-react-app/node_modules/**/*',
@@ -48,7 +47,7 @@ const liveFiles = [
 ];
 
 // Target the folder to delete/replace:
-const localInstall =   'C:/Users/benho/WordPress/dev/wp-content/plugins/plugin-name';
+const localInstall =   'C:/PATH/TO/LOCAL/INSTALL/wp-content/plugins/plugin-name';
 
 
 // Set the files to watch:
@@ -132,6 +131,7 @@ function copy() {
 }
 
 
+
 // Set the npm scripts:
 exports.clean = clean
 // exports.css = css
@@ -143,7 +143,7 @@ exports.default = series(
   clean,
   parallel(
     publicCSS,
-    adminCSS,
+    // adminCSS,
   ),
   parallel(
     publicJS,
@@ -157,11 +157,11 @@ const doAll = series(
   clean,
   parallel(
     publicCSS,
-    adminCSS
+    // adminCSS
   ),
   parallel(
     publicJS,
-    adminJS,
+    // adminJS,
   ),  copy,
 );
 
