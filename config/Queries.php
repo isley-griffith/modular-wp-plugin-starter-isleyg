@@ -18,7 +18,7 @@
 * @since      1.0.0
 * @package    plugin-name
 * @subpackage plugin-name/config
-* @author     Your Name <email@example.com>
+* @author     Queries.php <email@example.com>
 */
 class Plugin_Abbr_Queries {
 

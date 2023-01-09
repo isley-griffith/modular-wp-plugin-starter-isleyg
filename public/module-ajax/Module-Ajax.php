@@ -17,7 +17,7 @@
 *
 * @package    plugin-name
 * @subpackage plugin-name/public/module-ajax
-* @author     Your Name <email@example.com>
+* @author     Module-Ajaz.php <email@example.com>
 */
 class Plugin_Abbr_Public_Module_Ajax {
 

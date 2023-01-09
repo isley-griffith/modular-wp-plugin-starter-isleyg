@@ -19,7 +19,7 @@
 *
 * @package    plugin-name
 * @subpackage plugin-name/admin
-* @author     Your Name <email@example.com>
+* @author     Assets.php <email@example.com>
 */
 class Plugin_Abbr_Admin_Assets {
 

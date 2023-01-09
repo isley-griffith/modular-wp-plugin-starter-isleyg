@@ -18,7 +18,7 @@
 * @since      1.0.0
 * @package    plugin-name
 * @subpackage plugin-name/includes
-* @author     Your Name <email@example.com>
+* @author     Deactivator.php <email@example.com>
 */
 class Plugin_Abbr_Deactivator {
 

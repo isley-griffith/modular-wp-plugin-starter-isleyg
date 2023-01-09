@@ -19,7 +19,7 @@
 *
 * @package    plugin-name
 * @subpackage plugin-name/includes
-* @author     Your Name <email@example.com>
+* @author     Loader.php <email@example.com>
 */
 class Plugin_Abbr_Loader {
 
