@@ -6,7 +6,7 @@ gulpfile.js
 
 # security
 # **/config/**
-./config/Config.php
+/config/Config.php
 # production
 *.min.*
 
