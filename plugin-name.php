@@ -14,9 +14,9 @@
 *
 * @wordpress-plugin
 * Plugin Name:       Isley's Plugin
-* Plugin URI:        https://github.com/benhoverter/modular-wp-plugin-starter
-* GitHub Plugin URI: https://github.com/benhoverter/modular-wp-plugin-starter
-* Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+* Plugin URI:        https://github.com/isley-griffith/modular-wp-plugin-starter-isleyg
+* GitHub Plugin URI: https://github.com/isley-griffith/modular-wp-plugin-starter-isleyg
+* Description:       This plugin removes the admin bar from the front end of the site.
 * Version:           1.0.26
 * Author:            Isley Griffith
 * Author URI:        http://example.com
@@ -32,6 +32,9 @@
 if ( !defined( 'WPINC' ) ) {
     die;
 }
+
+add_filter('show_admin_bar', '__return_false');
+
 
 
 /**
@@ -49,6 +52,7 @@ define( 'PLUGIN_NAME_VERSION', '1.0.26' );
 function activate_plugin_title() {
     require_once plugin_dir_path( __FILE__ ) . 'includes/Activator.php';
     Plugin_Abbr_Activator::activate();
+
 }
 
 
